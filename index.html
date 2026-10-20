@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skins, Sleeves and Sheaths | ICRA 2027 Workshop</title>
+  <meta name="description" content="ICRA 2027 workshop on scalable robotic materials that sense, actuate and conform. Seoul, South Korea.">
+  <meta property="og:title" content="Skins, Sleeves and Sheaths | ICRA 2027 Workshop">
+  <meta property="og:description" content="Scalable robotic materials that sense, actuate and conform.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a class="brand" href="./">Skins, Sleeves &amp; Sheaths<span>ICRA 2027</span></a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#topics">Topics</a></li>
+      <li><a href="#speakers">Speakers</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#organizers">Organizers</a></li>
+      <li><a href="call-for-contributions/">Call for Contributions</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="container">
+    <div>
+      <span class="eyebrow">ICRA 2027 Workshop</span>
+      <h1><span class="w-skin">Skins</span>, <span class="w-sleeve">Sleeves</span> and <span class="w-sheath">Sheaths</span></h1>
+      <p class="subtitle">Scalable Robotic Materials that Sense, Actuate and Conform</p>
+      <div class="meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          COEX, Seoul, South Korea <!-- TODO: add room once assigned -->
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+          Workshop day TBA, 24–28 May 2027 <!-- TODO: exact date & time -->
+        </div>
+      </div>
+      <div class="btns">
+        <a class="btn btn-primary" href="call-for-contributions/">Call for Contributions</a>
+        <a class="btn btn-ghost" href="#about">About the Workshop</a>
+      </div>
+    </div>
+
+    <!-- Cross-section motif: core + three conforming layers -->
+    <svg class="layers" viewBox="0 0 320 320" role="img" aria-label="Three conforming material layers around a robot limb">
+      <defs>
+        <pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse">
+          <circle cx="5" cy="5" r="1.6" fill="#e2725b"/>
+        </pattern>
+      </defs>
+      <circle cx="160" cy="160" r="150" fill="#3d5a80" opacity="0.14"/>
+      <circle cx="160" cy="160" r="150" fill="none" stroke="#3d5a80" stroke-width="3"/>
+      <circle cx="160" cy="160" r="118" fill="#2a9d8f" opacity="0.16"/>
+      <circle cx="160" cy="160" r="118" fill="none" stroke="#2a9d8f" stroke-width="3" stroke-dasharray="14 8"/>
+      <circle cx="160" cy="160" r="86" fill="url(#dots)" opacity="0.55"/>
+      <circle cx="160" cy="160" r="86" fill="none" stroke="#e2725b" stroke-width="3"/>
+      <circle cx="160" cy="160" r="56" fill="#14212b"/>
+      <text x="160" y="166" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#fff">robot</text>
+    </svg>
+  </div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">About the Workshop</div>
+      <h2>Materials that cover, move and feel</h2>
+    </div>
+    <div class="prose">
+      <!-- DRAFT overview text: edit freely -->
+      <p class="lead">Robots are moving out of the lab and into homes, hospitals and fields, where they touch people, objects and surfaces with almost every part of their body. Yet most robots are still built as rigid machines with sensing and compliance added at a few points, usually the fingertips.</p>
+      <p>This workshop asks what happens when the material covering a robot does the work: skins that sense contact across the whole body, sleeves that actuate and reshape the limb they wrap, and sheaths that conform to complex geometry while protecting what lies underneath. We bring together researchers in soft materials, flexible electronics, fabrication and robot learning to discuss how such materials can be made at scale, integrated onto real robots, and turned into useful signals for perception and control, including as inputs to learning-based and foundation-model policies.</p>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar skin">
+        <div class="tag">Sense</div>
+        <h3>Skins</h3>
+        <p>Large-area, multimodal tactile and proprioceptive skins, from printed electronics to impedance-based and optical sensing.</p>
+      </div>
+      <div class="pillar sleeve">
+        <div class="tag">Actuate</div>
+        <h3>Sleeves</h3>
+        <p>Wearable and wrap-around actuating layers that stiffen, morph or drive the bodies they cover, for robots and for people.</p>
+      </div>
+      <div class="pillar sheath">
+        <div class="tag">Conform</div>
+        <h3>Sheaths</h3>
+        <p>Compliant, protective coverings that conform to complex geometries and survive real-world contact, wear and repair.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TOPICS ================= -->
+<section id="topics" class="alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Topics of Interest</div>
+      <h2>What we will discuss</h2>
+    </div>
+    <ol class="topics">
+      <li><span class="num">01</span><div><strong>Scalable materials and fabrication</strong><span class="desc">Printing, knitting, casting, molding and roll-to-roll approaches for large-area functional coverings.</span></div></li>
+      <li><span class="num">02</span><div><strong>Sensing skins</strong><span class="desc">Multimodal tactile, thermal and proximity sensing; wiring, readout and calibration at scale.</span></div></li>
+      <li><span class="num">03</span><div><strong>Actuating and morphing layers</strong><span class="desc">Soft actuators, variable stiffness and shape-changing materials integrated into coverings.</span></div></li>
+      <li><span class="num">04</span><div><strong>Conformable integration</strong><span class="desc">Mounting on curved and moving bodies, robustness, self-healing, repair and replaceability.</span></div></li>
+      <li><span class="num">05</span><div><strong>Perception and learning from material signals</strong><span class="desc">Representations for distributed sensing and their use in control and robot foundation models.</span></div></li>
+      <li><span class="num">06</span><div><strong>Applications</strong><span class="desc">Manipulation, whole-body contact, safe human-robot interaction, wearables and assistive devices.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= SPEAKERS ================= -->
+<section id="speakers">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Invited Speakers</div>
+      <h2>Keynote speakers</h2>
+    </div>
+
+    <div class="people">
+      <!--
+        Copy this block for each speaker. Put the photo in assets/img/speakers/.
+        <div class="person">
+          <a href="https://speaker-homepage" target="_blank" rel="noopener">
+            <img class="photo" src="assets/img/speakers/firstname-lastname.jpg" alt="Prof. Firstname Lastname">
+            <div class="name">Prof. Firstname Lastname</div>
+          </a>
+          <div class="aff">University</div>
+          <div class="talk">Talk title</div>
+        </div>
+      -->
+      <div class="person"><div class="photo">?</div><div class="name">To be announced</div><div class="aff">&nbsp;</div></div>
+      <div class="person"><div class="photo">?</div><div class="name">To be announced</div><div class="aff">&nbsp;</div></div>
+      <div class="person"><div class="photo">?</div><div class="name">To be announced</div><div class="aff">&nbsp;</div></div>
+      <div class="person"><div class="photo">?</div><div class="name">To be announced</div><div class="aff">&nbsp;</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SCHEDULE ================= -->
+<section id="schedule" class="alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Program</div>
+      <h2>Tentative schedule</h2>
+    </div>
+    <!-- Edit rows freely. Add class="break" to a <tr> for coffee/poster breaks. -->
+    <table class="schedule">
+      <thead>
+        <tr><th>Time</th><th>Session</th><th class="speaker-col">Speaker</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="time">TBA</td><td class="event">Opening remarks</td><td class="speaker-col">Organizers</td></tr>
+        <tr><td class="time">TBA</td><td class="event">Keynote talks: Skins</td><td class="speaker-col">TBA</td></tr>
+        <tr><td class="time">TBA</td><td class="event">Poster flash talks</td><td class="speaker-col">Poster authors</td></tr>
+        <tr class="break"><td class="time">TBA</td><td class="event">Coffee break and poster session</td><td class="speaker-col"></td></tr>
+        <tr><td class="time">TBA</td><td class="event">Keynote talks: Sleeves and Sheaths</td><td class="speaker-col">TBA</td></tr>
+        <tr><td class="time">TBA</td><td class="event">Panel discussion</td><td class="speaker-col">All speakers</td></tr>
+        <tr><td class="time">TBA</td><td class="event">Closing remarks and awards</td><td class="speaker-col">Organizers</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= ORGANIZERS ================= -->
+<section id="organizers">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Team</div>
+      <h2>Organizers</h2>
+    </div>
+    <div class="people organizers">
+      <!--
+        Copy this block for each organizer. Put the photo in assets/img/organizers/.
+        <div class="person">
+          <a href="https://homepage" target="_blank" rel="noopener">
+            <img class="photo" src="assets/img/organizers/firstname-lastname.jpg" alt="Firstname Lastname">
+            <div class="name">Firstname Lastname</div>
+          </a>
+          <div class="aff">University</div>
+        </div>
+      -->
+      <div class="person">
+        <a href="https://rexhuang98.github.io/" target="_blank" rel="noopener">
+          <img class="photo" src="assets/img/organizers/yunqi-huang.jpg" alt="Yunqi Huang">
+          <div class="name">Yunqi Huang</div>
+        </a>
+        <div class="aff">University College London</div>
+      </div>
+      <div class="person"><div class="photo">+</div><div class="name">Organizer</div><div class="aff">Affiliation</div></div>
+      <div class="person"><div class="photo">+</div><div class="name">Organizer</div><div class="aff">Affiliation</div></div>
+      <div class="person"><div class="photo">+</div><div class="name">Organizer</div><div class="aff">Affiliation</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SPONSORS (uncomment when you have them) =================
+<section id="sponsors" class="alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Support</div>
+      <h2>Sponsors</h2>
+    </div>
+    <div class="sponsors">
+      <a href="https://sponsor-website" target="_blank" rel="noopener"><img src="assets/img/sponsors/sponsor1.png" alt="Sponsor name"></a>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- ================= CTA ================= -->
+<section style="padding-top:0;">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h3>Share your work with us</h3>
+        <p>We invite 2-page extended abstracts, presented as posters and flash talks.</p>
+      </div>
+      <a class="btn" href="call-for-contributions/">Call for Contributions →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>Skins, Sleeves and Sheaths · Workshop at IEEE ICRA 2027, Seoul</div>
+    <div>Contact: <a href="mailto:yunqi.huang.23@ucl.ac.uk">yunqi.huang.23@ucl.ac.uk</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
