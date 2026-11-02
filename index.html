@@ -175,8 +175,11 @@
 
     /* logos */
     .logos{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:26px 40px; margin-top:8px}
-    .logos img{height:52px; max-width:170px; width:auto; object-fit:contain}
-    .logos .wordmark{height:44px; display:flex; align-items:center; font-weight:600; color:var(--slate); font-size:.98rem; border-left:3px solid var(--mist); padding-left:12px}
+    .logos img{height:52px; max-width:190px; width:auto; object-fit:contain}
+    .logos img.logo-ucl{height:74px; max-width:none}
+    .logos img.logo-lg{height:46px; max-width:210px}
+    .logos img.logo-xl{height:72px; max-width:none}
+    @media (max-width:640px){ .logos{gap:18px 24px} .logos img{height:38px; max-width:150px} .logos img.logo-ucl{height:56px} .logos img.logo-lg{height:36px} .logos img.logo-xl{height:54px} }
 
     footer{padding:30px 0 40px; color:#2b4256; font-size:.92rem}
     footer .container{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
@@ -312,9 +315,9 @@
       <div class="track">
         <div class="track-head"><h3>Sensing</h3><span>3 invited talks</span></div>
         <div class="slots">
-          <div class="slot tba-slot"><div class="disc">TBA</div><div class="slabel">Textiles</div></div>
+          <div class="slot"><img class="disc" src="assets/img/speakers/peyman-servati.jpg" alt="Peyman Servati"><div class="sname">Peyman Servati</div><div class="saff">Texavie Technologies</div><div class="stopic">Smart-textile wearables (industry)</div></div>
           <div class="slot"><img class="disc" src="assets/img/speakers/lucia-beccai.jpg" alt="Lucia Beccai"><div class="sname">Lucia Beccai</div><div class="saff">Italian Institute of Technology</div><div class="stopic">Bioinspired soft tactile sensing</div></div>
-          <div class="slot tba-slot"><div class="disc">TBA</div><div class="slabel">Large-area tactile</div></div>
+          <div class="slot"><img class="disc" src="assets/img/speakers/yajing-shen.jpg" alt="Yajing Shen"><div class="sname">Yajing Shen</div><div class="saff">Hong Kong University of Science and Technology</div><div class="stopic">Tactile sensing and whole-arm robotic skins</div></div>
         </div>
       </div>
       <div class="track">
@@ -389,7 +392,7 @@
         <div class="person"><img class="photo" src="assets/img/organizers/fumiya-iida.jpg" alt="Fumiya Iida"><div class="name">Fumiya Iida</div><div class="aff">The University of Tokyo</div></div>
         <div class="person"><img class="photo" src="assets/img/organizers/kyungseo-park.jpg" alt="Kyungseo Park"><div class="name">Kyungseo Park</div><div class="aff">DGIST</div></div>
         <div class="person"><img class="photo" src="assets/img/organizers/kaspar-althoefer.jpg" alt="Kaspar Althoefer"><div class="name">Kaspar Althoefer</div><div class="aff">Queen Mary University of London</div></div>
-        <div class="person"><img class="photo" src="assets/img/organizers/james-avery.jpg" alt="James Avery"><div class="name">James Avery</div><div class="aff">Imperial College London / University of Leeds</div></div>
+        <div class="person"><img class="photo" src="assets/img/organizers/james-avery.jpg" alt="James Avery"><div class="name">James Avery</div><div class="aff">University of Leeds</div></div>
         <div class="person"><img class="photo" src="assets/img/organizers/cecilia-laschi.jpg" alt="Cecilia Laschi"><div class="name">Cecilia Laschi</div><div class="aff">National University of Singapore</div></div>
         <div class="person"><img class="photo" src="assets/img/organizers/perla-maiolino.jpg" alt="Perla Maiolino"><div class="name">Perla Maiolino</div><div class="aff">University of Oxford</div></div>
         <div class="person"><img class="photo" src="assets/img/organizers/lorenzo-jamone.jpg" alt="Lorenzo Jamone"><div class="name">Lorenzo Jamone</div><div class="aff">University College London</div></div>
@@ -403,19 +406,16 @@
   <div class="container">
     <div class="panel">
       <div class="kicker">Participating Institutions</div>
-      <!-- To add a logo: put the PNG in assets/img/logos/ and replace the matching <div class="wordmark"> with
-           <img src="assets/img/logos/name.png" alt="Institution name"> -->
       <div class="logos">
-        <img src="assets/img/logos/ucl.png" alt="University College London">
+        <img class="logo-ucl" src="assets/img/logos/ucl.png" alt="University College London">
         <img src="assets/img/logos/qmul.png" alt="Queen Mary University of London">
-        <img src="assets/img/logos/sant-anna.png" alt="Scuola Superiore Sant'Anna">
+        <img class="logo-lg" src="assets/img/logos/sant-anna.png" alt="Scuola Superiore Sant'Anna">
+        <img src="assets/img/logos/cambridge.png" alt="University of Cambridge">
+        <img src="assets/img/logos/oxford.png" alt="University of Oxford">
+        <img src="assets/img/logos/leeds.png" alt="University of Leeds">
         <img src="assets/img/logos/utokyo.png" alt="The University of Tokyo">
         <img src="assets/img/logos/nus.png" alt="National University of Singapore">
-        <div class="wordmark">University of Cambridge</div>
-        <div class="wordmark">University of Oxford</div>
-        <div class="wordmark">Imperial College London</div>
-        <div class="wordmark">University of Leeds</div>
-        <div class="wordmark">DGIST</div>
+        <img class="logo-xl" src="assets/img/logos/dgist.png" alt="DGIST">
       </div>
     </div>
   </div>
